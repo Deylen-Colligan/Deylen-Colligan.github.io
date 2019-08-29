@@ -1,1 +1,1 @@
-# Deylen-Collligan.github.io
+# Deylen-Colligan.github.io
