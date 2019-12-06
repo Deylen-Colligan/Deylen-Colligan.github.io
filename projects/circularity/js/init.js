@@ -30,14 +30,18 @@ var init = function (window) {
             var drawCircle = function() {
             // TODO 2: Draw a circle //
             circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
-            physikz.addRandomVelocity(circle, canvas);
+            physikz.addRandomVelocity(circle, canvas, 10, 10);
             view.addChild(circle);
             circles.push(circle);
 }
 
         // TODO 3 / 7 : Call the drawCircle function 
 
-         
+         for (var counter = 0; counter < 100; counter++) {
+        // do something
+        drawCircle();
+        }
+   
            
         view.addChild(fps);
         app.addUpdateable(fps);
